@@ -1,23 +1,23 @@
 #include "main.h"
 
 /**
- * _memcpy - Copies @n bytes from the memory area pointed
- *           to by sting  @src into string @dest.
- * @dest: pointer to the string memory to copy to.
- * @src: pointer of string to  copy characters from.
- * @n: number of bytes memory to copy from @src.
+ * *_memset - Fills the first N bytes of the memory
+ *          of string S(pointer) with the constant byte of B
+ * @s: A pointer to the memory area to be filled.
+ * @b: The character to fill the memory area with.
+ * @n: The number of bytes to be filled.
  *
- * Return: returs @dest.
+ * Return: string @s, pointer to memory string s
  */
 
-char *_memcpy(char *dest, char *src, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
 
 	for (i = 0; i < n; i++)
 	{
-		dest[i] = src[i];
+		s[i] = b;
 	}
 
-	return (dest);
+	return (s);
 }
