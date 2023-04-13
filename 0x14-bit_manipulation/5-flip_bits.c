@@ -2,16 +2,16 @@
 
 
 
-unsigned int flip_bits(unsigned long int p, unsigned long int q)
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned long int btw, check;
 	unsigned int num, i;
 
 	check = 1;
-	btw = p ^ q;
+	btw = n ^ m;
 	num = 0;
 
-	for (k = 0; k < (sizeof(unsigned long int) * 8); k++)
+	for (i = 0; i < (sizeof(unsigned long int) * 8); i++)
 	{
 		if (check == (btw & check))
 			num++;
